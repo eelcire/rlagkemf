@@ -22,13 +22,8 @@ export default class Header extends Component {
               <h1 className="responsive-headline">Kim Quartet</h1>
               <h3 className = "text-stroke">In the state of Texas, <span>expressive</span>, <span>organized</span>, <span>inspirational</span> and <span>solemn</span>, performing with gifts from above.</h3>
               <ul className="social">
-                <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                <li><a href="#"><i className="fa fa-instagram" /></a></li>
-                <li><a href="#"><i className="fa fa-dribbble" /></a></li>
-                <li><a href="#"><i className="fa fa-skype" /></a></li>
+                <li><a href="https://www.facebook.com/kimquartet/" target = "_blank"><i className="fa fa-facebook" /></a></li>
+                <li><a href="https://www.instagram.com/kimquartet/" target = "_blank"><i className="fa fa-instagram" /></a></li>
               </ul>
             </div>
           </div>
