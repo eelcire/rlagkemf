@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 
 export default class Header extends Component {
-    render() {
-        return (
-            <React.Fragment>
-
+  render() {
+    return (
+      <React.Fragment>
         <header id="home">
           <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -31,8 +30,7 @@ export default class Header extends Component {
             <a className="smoothscroll" href="#about"><i className="icon-down-circle" /></a>
           </p>
         </header>
-
-            </React.Fragment>
-        )
-    }
+      </React.Fragment>
+    )
+  }
 }

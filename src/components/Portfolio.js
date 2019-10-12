@@ -41,11 +41,11 @@ export default class Portfolio extends Component {
                 <div className="columns portfolio-item">
                   <div className="item-wrap">
                     <a href="#modal-03" title>
-                      <img alt="" src="images/portfolio/judah.jpg" />
+                      <img alt="" src="images/portfolio/port8.png" />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
-                          <h5>Something</h5>
-                          <p>Something Else</p>
+                          <h5>Gabriel's Oboe</h5>
+                          <p>Ennio Morricone</p>
                         </div>
                       </div>
                       <div className="link-icon"><i className="icon-plus" /></div>
@@ -111,11 +111,11 @@ export default class Portfolio extends Component {
                 <div className="columns portfolio-item">
                   <div className="item-wrap">
                     <a href="#modal-08" title>
-                      <img alt="" src="images/portfolio/retrocam.jpg" />
+                      <img alt="" src="images/portfolio/port8.png" />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
-                          <h5>Somethin</h5>
-                          <p>Somethin Else</p>
+                          <h5>Gabriel's Oboe</h5>
+                          <p>Ennio Morricone</p>
                         </div>
                       </div>
                       <div className="link-icon"><i className="icon-plus" /></div>
@@ -219,11 +219,13 @@ export default class Portfolio extends Component {
               </div>
             </div>{/* modal-07 End */}
             <div id="modal-08" className="popup-modal mfp-hide">
-              <img className="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
+              <div class="video-responsive">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/c1F0Qlt2hE0" frameborder="0" allowfullscreen></iframe>
+              </div>
               <div className="description-box">
-                <h4>Somethin</h4>
-                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-                <span className="categories"><i className="fa fa-tag" />Webdesign, Photography</span>
+                <h4>Gabriel's Oboe</h4>
+                <p>Ennio Morricone</p>
+                <span className="categories"><i className="fa fa-tag" />Oboe: Amy Kim</span>
               </div>
               <div className="link-box">
                 <a className="popup-modal-dismiss">Close</a>

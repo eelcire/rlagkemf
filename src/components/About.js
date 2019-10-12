@@ -5,7 +5,7 @@ export default class About extends Component {
     return (
       <React.Fragment>
         {/* Helen Start */}
-        <section id="about">
+        <section id="about" class = "helen">
           <div className="row">
             <div className="three columns">
               <img className="profile-pic" src="images/helen.jpg" alt="" />
@@ -24,7 +24,7 @@ export default class About extends Component {
         </section>
         {/* Helen End */}
         {/* Hamin Start */}
-        <section id="about">
+        <section id="about" class = "hamin">
           <div className="row">
             <div className="three columns">
               <img className="profile-pic" src="images/hamin.jpeg" alt="" />
@@ -44,7 +44,7 @@ export default class About extends Component {
         </section>
         {/* Hamin End */}
         {/* Hana Start */}
-        <section id="about">
+        <section id="about" class = "hana">
           <div className="row">
             <div className="three columns">
               <img className="profile-pic" src="images/hana.jpeg" alt="" />
@@ -63,7 +63,7 @@ export default class About extends Component {
         </section>
         {/* Hana End */}
         {/* Hajung Start */}
-        <section id="about">
+        <section id="about" class = "amy">
           <div className="row">
             <div className="three columns">
               <img className="profile-pic" src="images/hajung.jpeg" alt="" />
