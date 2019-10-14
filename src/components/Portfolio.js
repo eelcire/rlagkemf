@@ -124,7 +124,7 @@ export default class Portfolio extends Component {
                 </div>  {/* item end */}
               </div> {/* portfolio-wrapper end */}
             </div> {/* twelve columns end */}
-            <h1>Click Here For More Videos!</h1>
+            <h1><a href = "https://www.youtube.com/channel/UCR6tAjQPTA6V0Tqi52tKXkA" target = "_blank">Click Here For More Videos!</a></h1>
             {/* Modal Popup
           --------------------------------------------------------------- */}
             <div id="modal-01" className="popup-modal mfp-hide">

@@ -4,6 +4,7 @@ export default class Header extends Component {
   render() {
     return (
       <React.Fragment>
+        <div className = "tint">
         <header id="home">
           <nav id="nav-wrap">
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -30,6 +31,7 @@ export default class Header extends Component {
             <a className="smoothscroll" href="#about"><i className="icon-down-circle" /></a>
           </p>
         </header>
+        </div>
       </React.Fragment>
     )
   }
