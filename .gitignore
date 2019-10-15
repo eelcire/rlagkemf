@@ -1,5 +1,4 @@
-/config/dev.env
-
+dev.env
 # dependencies
 /node_modules
 /.pnp
