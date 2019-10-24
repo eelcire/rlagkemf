@@ -4,7 +4,7 @@ const cors = require('cors')
 const path = require('path')
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 80
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
