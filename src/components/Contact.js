@@ -1,24 +1,45 @@
 import React, { Component } from 'react'
+import * as emailjs from 'emailjs-com'
 
 export default class Contact extends Component {
-    state = {
-      email: {
-        name: '',
-        sender: '',
-        subject: '',
-        text: ''
-      }
-    }
-
-  sendEmail = (e) => {
-    e.preventDefault();
-    const { email } = this.state
-    fetch(`http://127.0.0.1:4000/send-email?recipient=rexic999@gmail.com&sender=${email.sender}&topic=${email.subject}&text=${email.text}&name=${email.name}`)
-      .catch(err => console.log(err))
+  state = {
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
   }
 
+  handleSubmit(e) {
+    e.preventDefault()
+    const { name, email, subject, message } = this.state
+    let templateParams = {
+      from_name: `${name}. Email: ${email}`,
+      to_name: 'Kim Quartet',
+      subject: subject,
+      message_html: message,
+      }
+      emailjs.send(
+      'gmail',
+      'template_uerFqyrH',
+      templateParams,
+      'user_XNNyOMfuDzHxCjucUk9eZ'
+      )
+      window.alert('Email Sent!')
+      this.resetForm()
+  }
+  resetForm() {
+      this.setState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      })
+    }
+  handleChange = (param, e) => {
+      this.setState({ [param]: e.target.value })
+    }
+
   render() {
-    const { email } = this.state
     return (
       <React.Fragment>
         <section id="contact">
@@ -34,26 +55,26 @@ export default class Contact extends Component {
           <div className="row">
             <div className="eight columns">
               {/* form */}
-              <form id="contactForm" name="contactForm">
+              <form id="contactForm" name="contactForm" onSubmit={this.handleSubmit.bind(this)}>
                 <fieldset>
                   <div>
                     <label>Name<span className="required">*</span></label>
-                    <input type="text" size={35} value = {email.name} onChange = {e => this.setState({ email: { ...email, name: e.target.value }})} />
+                    <input type="text" size={35} value={this.state.name} onChange={this.handleChange.bind(this, 'name')} />
                   </div>
                   <div>
                     <label>Email <span className="required">*</span></label>
-                    <input type="text" size={35} value = {email.sender} onChange = {e => this.setState({ email: { ...email, sender: e.target.value }})}/>
+                    <input type="email" size={35} value = {this.state.email} onChange={this.handleChange.bind(this, 'email')}/>
                   </div>
                   <div>
                     <label>Subject</label>
-                    <input type="text" size={35} value = {email.subject} onChange = {e => this.setState({ email: { ...email, subject: e.target.value }})}/>
+                    <input type="text" size={35} value={this.state.subject} onChange={this.handleChange.bind(this, 'subject')}/>
                   </div>
                   <div>
                     <label>Message <span className="required">*</span></label>
-                    <textarea cols={50} rows={15} value = {email.text} onChange = {e => this.setState({ email: { ...email, text: e.target.value }})} />
+                    <textarea cols={50} rows={15} value={this.state.message} onChange={this.handleChange.bind(this, 'message')} />
                   </div>
                   <div>
-                    <button onClick = {this.sendEmail} className="submit">Submit</button>
+                    <button type = "submit" className="submit">Submit</button>
                   </div>
                 </fieldset>
               </form> {/* Form End */}
