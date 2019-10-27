@@ -8,12 +8,12 @@ export default class About extends Component {
         <section id="about" className = "helen">
           <div className="row">
             <div className="three columns">
-              <img className="profile-pic" src="images/helen.jpg" alt="" />
+              <img className="profile-pic" src="images/helen.jpg" alt="Helen Kim" />
             </div>
             <div className="nine columns main-col">
               <h2>Helen Kim</h2>
-              <p>As a young rising artist, Ms. Kim has won numerous competitions and auditions such as Carolina Band Festival, Dallas Symphony Festival, Raleigh Area Flute Association and Raleigh Symphony Orchestra Concerto Competition.
-                Having performed as a soloist with Carolina Philharmonic and Raleight Symphony Orchestra, she is now teaching flute at Birdville High School and running a private flute and piccolo studio in Forth Worth, TX.
+              <p>As a young rising artist, Ms. Kim has won numerous competitions and auditions such as Carolina Band Festival, Dallas Symphony Festival, Raleigh Area Flute Association and Raleigh Symphony Orchestra Concerto Competition and completed her higher education at the Royal Academy of Music.
+                Having performed as a soloist with Carolina Philharmonic and Raleight Symphony Orchestra, she is now teaching flute at Birdville High School, running a private flute and piccolo studio in Forth Worth, TX and works for Dallas Symphony Orchestra as a Teaching Artist under its new Young Musicians Program.
               </p>
               <h5><a href = "http://www.helenkimflute.com/" target = "_blank" rel = "noopener noreferrer">Click To Learn More</a></h5>
                   <a href="https://www.facebook.com/helen.haeun.kim" target = "_blank" rel = "noopener noreferrer"><i className="fa fa-facebook social_media" /></a>
@@ -27,7 +27,7 @@ export default class About extends Component {
         <section id="about" className = "hamin">
           <div className="row">
             <div className="three columns">
-              <img className="profile-pic" src="images/hamin.jpeg" alt="" />
+              <img className="profile-pic" src="images/hamin.png" alt="Hamin Kim" />
             </div>
             <div className="nine columns main-col">
               <h2>Hamin Kim</h2>
@@ -47,7 +47,7 @@ export default class About extends Component {
         <section id="about" className = "hana">
           <div className="row">
             <div className="three columns">
-              <img className="profile-pic" src="images/hana.jpeg" alt="" />
+              <img className="profile-pic" src="images/hana.png" alt="Hana Kim" />
             </div>
             <div className="nine columns main-col">
               <h2>Hana Kim</h2>
@@ -66,7 +66,7 @@ export default class About extends Component {
         <section id="about" className = "amy">
           <div className="row">
             <div className="three columns">
-              <img className="profile-pic" src="images/hajung.jpeg" alt="" />
+              <img className="profile-pic" src="images/hajung.jpeg" alt="Amy Kim" />
             </div>
             <div className="nine columns main-col">
               <h2>Amy Kim</h2>

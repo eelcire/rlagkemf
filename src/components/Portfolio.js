@@ -42,11 +42,11 @@ export default class Portfolio extends Component {
                 <div className="columns portfolio-item">
                   <div className="item-wrap">
                     <a href="#modal-03">
-                      <img alt="" src="images/portfolio/1.png" />
+                      <img alt="" src="images/portfolio/port3.png" />
                       <div className="overlay">
                         <div className="portfolio-item-meta">
-                          <h5>I Am Thine, O Lord - Freestyle</h5>
-                          <p>Hymn - Fanny Crosby</p>
+                          <h5>Divertimento in C, HOB IV 1</h5>
+                          <p>J. Haydn</p>
                         </div>
                       </div>
                       <div className="link-icon"><i className="icon-plus" /></div>
@@ -156,12 +156,12 @@ export default class Portfolio extends Component {
             </div>{/* modal-02 End */}
             <div id="modal-03" className="popup-modal mfp-hide">
               <div className="video-responsive">
-                <iframe title = "v3" width="420" height="315" src="https://www.youtube.com/embed/uGTQ4galmno" frameBorder="0" allowFullScreen></iframe>
+                <iframe title = "v3" width="420" height="315" src="https://www.youtube.com/embed/dENt1k7je6Y" frameBorder="0" allowFullScreen></iframe>
               </div>
               <div className="description-box">
-                <h4>I Am Thine, O Lord - Freestyle</h4>
-                <p>Hymn - Fanny Crosby</p>
-                <span className="categories"><i className="fa fa-tag" />Flute: Helen Kim, Cello: Hamin Kim, Violin: Hana Kim</span>
+                <h4>Divertimento in C, HOB IV 1</h4>
+                <p>J. Haydn</p>
+                <span className="categories"><i className="fa fa-tag" />Flute: Helen Kim + Ji Young Kim, Cello: Hamin Kim, Piano: Hyun-Jeong Hwang</span>
               </div>
               <div className="link-box">
                 <a href={voidd} className="popup-modal-dismiss">Close</a>
